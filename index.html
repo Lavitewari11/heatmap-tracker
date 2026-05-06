@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Heatmap Tracker</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <div class="text-center p-5">
+    <h1 class="text-3xl font-bold">Heatmap Tracker 🔥</h1>
+    <p class="text-gray-600">Move mouse and click anywhere</p>
+  </div>
+
+  <!-- Tracking Area -->
+  <div id="area" class="w-full h-[80vh] bg-white border relative">
+  <canvas id="heatmapCanvas" class="absolute top-0 left-0"></canvas>
+</div>
+
+<div class="text-center mt-4">
+  <button onclick="clearData()" class="bg-red-500 text-white px-4 py-2 rounded">Clear</button>
+  <button onclick="replay()" class="bg-blue-500 text-white px-4 py-2 rounded">Replay</button>
+</div> 
+
+  <script src="script.js"></script>
+</body>
+</html>
